@@ -22,6 +22,12 @@ PATH_NIDORPI="/usr/src/nidorpi/"
 LINK_DEB="http://burylo.com/debs"
 WGET_OPTIONS="-P $PATH_NIDORPI -q --show-progress"
 
+# modify vim settings
+sed -i 's/"syntax\ on/syntax\ on/' /etc/vim/vimrc
+echo "set tabstop=4" >> /etc/vim/vimrc
+echo "set shiftwidth=4" >> /etc/vim/vimrc
+echo "set expandtab" >> /etc/vim/vimrc
+
 mkdir -p $PATH_NIDORPI
 
 msg "Checking kernel"
