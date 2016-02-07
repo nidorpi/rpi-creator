@@ -91,6 +91,5 @@ msg "Pulling needed images"
 docker pull hypriot/rpi-swarm > /dev/null
 #docker pull hypriot/rpi-consul
 
-msg "Starting swarm node"
-#docker run -d --name swarm-node --restart=always hypriot/rpi-swarm join --addr=$IP:2375 token://c2dca3a93f0c583b4a1c86c5bac66cd3
+# msg "Starting swarm node"
 
