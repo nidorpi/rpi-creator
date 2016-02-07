@@ -54,8 +54,8 @@ if which docker > /dev/null; then
     msg "+You have Docker installed"
 else
     msg "+Installing docker"
-    wget http://downloads.hypriot.com/docker-hypriot_1.9.1-1_armhf.deb $WGET_OPTIONS
-    dpkg -i $PATH_NIDORPI/docker-hypriot_1.9.1-1_armhf.deb
+    wget http://downloads.hypriot.com/docker-hypriot_1.10.0-1_armhf.deb $WGET_OPTIONS
+    dpkg -i $PATH_NIDORPI/docker-hypriot_1.10.0-1_armhf.deb
 fi
 
 msg "Checking docker-machine"
